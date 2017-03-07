@@ -1,0 +1,73 @@
+div {
+    display: block;
+}
+
+.parent {
+    position: relative;
+    display: table;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    width: 418px;
+    height: 397px;
+    background-color: lightgreen;
+}
+.parent > p {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.son {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80px;
+    height: 80px;
+    /* padding: 40px; */
+    background-color: orange;
+}
+
+.top-left {
+    top: 0;
+    left: -100px;   
+}
+
+.top-right {
+    top: 0;
+    right: -100px;
+}
+.bottom-right {
+    bottom: 0;
+    right: -100px;
+}
+.bottom-left {
+    bottom: 0;
+    left: -100px
+}
+
+.top-center {
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.right-center {
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.bottom-center {
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+    margin-bottom: -40px;
+}
+.left-center {
+    left: 0;
+    margin-left: -40px;
+    top: 50%;
+    margin-top: -40px;
+}

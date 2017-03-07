@@ -1,0 +1,248 @@
+/* RESET */
+html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family: Helvetica;
+}
+body, nav, content, header, div, footer, section {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TAB navigation */
+.switcherTip {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 57px;
+    left: 37px;
+    z-index: 999;
+}
+nav.layoutSwitcher {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px;
+    line-height: 6;
+    background-color: blueviolet;
+    overflow: hidden;
+    padding: 0;
+    transition: ease 0.1s;
+    border-radius: 50px;
+    z-index: 999;
+}
+.layoutSwitcher:hover {
+    line-height: normal;
+    display: block;
+    border-radius: 50px;
+    width: 700px;
+    height: 60px;
+    margin: 0;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5), 0 10px 50px rgba(0, 0, 0, 0.1), 0 10px 30px rgba( 165, 26, 192, 0.5), -2px 2px 7px rgba(255, 255, 255, 0.7), -2px 1px 1px rgba(255, 255, 255, 0.5);
+    transition: ease 0.2s;
+    background-color: blueviolet;
+    z-index: 999;
+}
+
+.layoutSwitcher__panel {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.layoutSwitcher__button {
+    position: relative;
+    display: table;
+    width: 25%;
+    float: left;
+    list-style: none;
+}
+.layoutSwitcher__button a {
+    position: relative;
+    display: table-cell;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color:yellow;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.layoutSwitcher__button a:hover {
+    background-color: darkviolet;
+}
+li:hover a {
+    color: aliceblue;
+}
+.current {
+    border-bottom: 4px solid black;
+}
+
+/* CONTENT of layout */
+content {
+    display: block;
+    position: relative;
+    min-height: 100%;
+} 
+.tab {
+    position: relative;
+    display: block;
+    height: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.padding {
+    padding: 20px;
+}
+/* HEADER for V1-4 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: yellowgreen;
+    z-index: 1;
+}
+/* TEXT centering */
+.center {
+    display: table;
+}
+.center p {
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* COLUMNS */
+.pseudoLeftColumn {
+    width: 25%;
+    height: 100%;
+    z-index: 0;
+    background-color: aliceblue;
+    
+}
+.pseudoRightColumn {
+    width: 300%;
+    margin-right: -100%; /* чтобы IE6 не раздвигал контейнер */
+    position:relative;
+    left: 100%;
+    background-color: cadetblue;
+}
+.leftColumn {
+    float: left;
+    width: 33.333%;
+    margin-right: -100%;
+    position:relative;
+    left: -33.333%;
+}
+.rightColumn {
+    width: 100%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    overflow: hidden; /* тройной презерватив для IE */
+}
+footer {
+    float: left;
+    display: table;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background-color: seagreen;
+}
+
+/* LAYOUT 2 properties */
+.plc {
+    width: 25%;
+    background-color: aliceblue;
+}
+.lc {
+    float: left;
+    width: 100%;
+    left: -300%;
+    margin-right: -100%;
+}
+.pcc {
+    width: 200%;
+    left: 100%;
+    margin-right: -100%;
+    background-color: cadetblue;
+}
+.cc {
+    float: left;
+    width: 200%;
+    left: -200%;
+    margin-right: -200%;
+}
+.prc {
+    width: 50%;
+    right: -100%;
+    background-color: aliceblue;
+}
+.rc {
+    float: right;
+}
+
+
+/* LAYOUT 3 properties */
+.logo {
+    float: left;
+    width: 100px;
+    height: 60px;
+    background-color: greenyellow;
+}
+.info {
+    height: 60px;
+    float: right;
+    width: 60%;
+    background-color: forestgreen;
+}
+.item {
+    display: block;
+    float: left;
+    width: 29%;
+    padding-bottom: 29%;
+    margin: 2.165%;
+    background-color: paleturquoise;
+}
+
+/* LAYOUT 4 properties */
+.floatingImages {
+    width: 100%;
+    text-align: justify;
+}
+span.dropcaps {
+    font-size: 550%;
+    margin-bottom: -15px;
+    margin-left: -5px;
+    margin-right: 5px;
+    margin-top: -5px;
+    line-height: 1;
+    float: left;
+    font-weight: bold;
+    position: relative;
+}
+.imgFloat_left {
+    float: left;
+    width: 30%;
+    margin: 5px 20px 5px 0;
+}
+.imgFloat_right {
+    float: right;
+    width: 30%;
+    margin: 5px 0 0 20px;
+}
+.imgFloat_center {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}

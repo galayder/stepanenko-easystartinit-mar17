@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="tabs.js"></script>
+</head>
+
+<body>
+    <img src="switch.png" class="switcherTip"/>
+    <nav class="layoutSwitcher">
+        <ul class="layoutSwitcher__panel">
+            <li class="layoutSwitcher__button"><a href="javascript:void(0)" onclick="openTab('Layout1')">Layout 1</a></li>
+            <li class="layoutSwitcher__button"><a href="javascript:void(0)" onclick="openTab('Layout2')">Layout 2</a></li>
+            <li class="layoutSwitcher__button"><a href="javascript:void(0)" onclick="openTab('Layout3')">Layout 3</a></li>
+            <li class="layoutSwitcher__button"><a href="javascript:void(0)" onclick="openTab('Layout4')">Layout 4</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Tab content-->
+    <content>
+       
+        <div id="Layout1" class="tab">
+            <header class="center">
+                <p>Two-column layout</p>
+            </header>
+            <section class="pseudoLeftColumn">
+                <section class="pseudoRightColumn">
+                    <div class="padding leftColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores, consem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores, consequuntur delectus dolores sunt natus ipsam at aperiam necessitatibus possimus laboriosam facilis. Fugiat, assumenda corporis possimus accusamus sapiente eos quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia accusantium non, labore sint obcaecati, hic repellat. Perspiciatis pariatur, officia fuga accusantium earum aliquam laudantium. Rem aliquam odit consequatur quo.</p></div>
+                    <div class="padding rightColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, animi nostrum mollitia, eligendi magnam non dolorem distinctio expedita veniam, qui sapiente quidem soluta architecto possimus! Dolore iusto quia ipsum velit!</p></div>
+                    <div class="clear"></div>
+                </section>
+            </section>
+            <footer class="center"></footer>
+        </div>
+
+        <div id="Layout2" class="tab" style="display:none">
+            <header class="center">
+                <p>Three-column layout</p>
+            </header>
+            <section class="plc">
+                <section class="pcc">
+                   <section class="prc">
+                    <div class="padding lc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores, consem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores, consequuntur delectus dolores sunt natus ipsam at aperiam necessitatibus possimus laboriosam facilis. Fugiat, assumenda corporis possimus accusamus sapiente eos quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia accusantium non, labore sint obcaecati, hic repellat. Perspiciatis pariatur, officia fuga accusantium earum aliquam laudantium. Rem aliquam odit consequatur quo.</p></div>
+                    <div class="padding cc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, animi nostrum mollitia, eligendi magnam non dolorem distinctio expedita veniam, qui sapiente quidem soluta architecto possimus! Dolore iusto quia ipsum velit!</p></div>
+                    <div class="padding rc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quod officia dolorum illum id modi, ipsam iste. Ea deleniti, praesentium placeat cumque delectus, ipsam eligendi quasi, aliquam recusandae sed facere.</p>
+                    </div>
+                    <div class="clear"></div>
+                    </section>
+                </section>
+            </section>
+            <footer class="center"></footer>
+        </div>
+
+        <div id="Layout3" class="tab" style="display:none">
+            <header class="padding center">
+                <div class="logo"></div>
+                <div class="info"></div>
+            </header>
+            <section class="pseudoLeftColumn">
+                <section class="pseudoRightColumn">
+                    <div class="padding leftColumn"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores, consem ipsum dolor sit amet, consectetur adipisicing elit. Neque, maiores, consequuntur delectus dolores sunt natus ipsam at aperiam necessitatibus possimus laboriosam facilis. Fugiat, assumenda corporis possimus accusamus sapiente eos quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia accusantium non, labore sint obcaecati, hic repellat. Perspiciatis pariatur, officia fuga accusantium earum aliquam laudantium. Rem aliquam odit consequatur quo.</p></div>
+                    <div class="padding rightColumn">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </section>
+            <footer class="center"></footer>
+        </div>
+        
+        <div id="Layout4" class="tab" style="display:none">
+            <section class="floatingImages">
+                <p><img src="1.jpg" class="imgFloat_left"><span class="dropcaps">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.</p><br>
+                <p><img src="2.jpg" class="imgFloat_right">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis expedita ab fugit, ad officia. Perferendis facilis, optio ratione similique sunt, at, atque natus dicta ab aperiam facere rem molestias vel.</p>
+                <img class="imgFloat_center" src="3.jpg">
+                
+            </section>
+        </div>
+        
+    </content>
+    
+    
+</body>
+</html>
