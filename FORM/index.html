@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-popup">
+        <div class="login-popup__close"></div>
+        <header class="login-popup__full-block header">
+            <h1>Log in to the Site</h1>
+        </header>
+        <section class="login-popup__half-block social">
+            <button class="btn btn_fbook">Log in with Facebook</button>
+            <button class="btn btn_gplus">Log in with Google +</button>
+        </section>
+        <section class="login-popup__half-block submission">
+            <form class="form" action="/action_page.php" method="post">
+                  <label for="male">Login</label>
+                  <input class="form__input-field" type="text" name="login"><br>
+                  <label for="male">Password</label>
+                  <input class="form__input-field" type="text" name="password">
+                  <input type="checkbox" checked="checked">
+                  <p>Remember me</p>
+                  <input class="form__submit" type="submit" value="Submit">
+            </form>
+        </section>
+        <footer class="login-popup__full-block footer">
+            <p class="footer__p">Dont have an account yet? <a class="" href="#">Sign up</a></p>
+        </footer>
+    </div>
+</body>
+</html>

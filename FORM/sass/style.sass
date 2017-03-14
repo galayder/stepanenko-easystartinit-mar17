@@ -1,0 +1,118 @@
+$body-color: #e8e8e8
+$popup-bg: #f3f3f3
+$white-bg: #ffffff
+$btn-fbook: #3e5b96
+$btn-fbook_hover: #385388
+$btn-gplus: #dd5342
+$btn-gplus_hover: #cd4c3c
+$popup-dismiss: #c2c2c2
+$input-border: #dddddd
+$black: #000000
+$btn-black: #252525
+$red: #e62b1e
+$grey: #666666
+$h-grey: #333333
+
+@mixin flexbox()
+    display: -webkit-box
+    display: -moz-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    
+body
+    font-family: Arial
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    background-color: $body-color
+login-popup__close
+    position: absolute
+    right: 0
+    top: 0
+    
+.login-popup
+    @include flexbox()
+    margin: 0 auto
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    flex-flow: wrap
+    max-width: 52.5em
+    border-top: 0.125em solid $red
+    background-color: $popup-bg
+    box-shadow: 0 0.125em 0.125em rgba($black, .25)
+    
+.login-popup__full-block
+    flex: 1 100%
+    text-align: center
+    padding: 0.25em
+    background-color: $white-bg
+.footer
+    padding: 0.95em
+.header h1
+    color: $h-grey
+    font-size: 1.938em
+.footer__p
+    color: $grey
+    font-size: 1.125em
+    font-weight: normal
+    a
+        font-weight: bold
+        color: $black
+    
+.login-popup__half-block
+    flex-flow: wrap
+    align-content: flex-start
+    flex: 1
+    @include flexbox()
+    text-align: center
+    padding: 0 60px
+    margin: 40px 0
+    font-size: 0.875em
+    font-weight: bold
+    border-right: 0.063em solid rgba($black, .15)
+.btn
+    flex: 1 100%
+    text-align: center
+    margin-bottom: 20px
+    padding: 12px 0
+    font-weight: bold
+    border: none
+    border-radius: 0.188em;
+    color: $white-bg
+    &:hover 
+        background-color: red
+.btn_fbook
+    background-color: $btn-fbook
+    &:hover
+        background-color: $btn-fbook_hover
+.btn_gplus
+    background-color: $btn_gplus
+    &:hover
+        background-color: $btn-gplus_hover
+
+.form
+    @include flexbox()
+    text-align: left
+    padding: 0
+    margin: 0
+label
+    padding: 0
+    margin: 0
+.form__input-field
+    flex: 1 100%
+    font-size: 1.125em
+    margin-top: 6px
+    margin-bottom: 26px
+    padding: 9px 
+    box-sizing: border-box
+    border: 1px solid $input-border
+    border-radius: 0.188em;
+.form__submit
+    float: left
+    border: 0;
+    color: $white-bg
+    background-color: $btn-black
+    &:hover
+        background-color: $grey
